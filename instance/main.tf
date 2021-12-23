@@ -1,5 +1,10 @@
 module "instance_project" {
   source = "../modules/ec2/"
+  ami_id = local.ami
+  region = local.region
+  instanceType = local.instanceType
+  tags = local.tags
+  
 
 
 }
